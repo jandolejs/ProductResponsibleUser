@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add parent="Magento_User::system_acl" id="Aiti_ProductResponsibleUser::index" title="Responsible users" module="Aiti_ProductResponsibleUser" sortOrder="9999" resource="Aiti_ProductResponsibleUser::index" action="responsibleUsers/index"/>
+    </menu>
+</config>
