@@ -1,14 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Aiti\ProductResponsibleUser\Controller\Adminhtml\Index;
 
-class Index extends \Magento\Framework\App\Action\Action
+use Magento\Backend\App\Action;
+use Magento\Backend\App\Action\Context;
+use Magento\Framework\App\Action\HttpGetActionInterface;
+use Magento\Framework\View\Result\PageFactory;
+
+class Index extends Action implements HttpGetActionInterface
 {
-    protected $_pageFactory;
+
+    protected PageFactory $_pageFactory;
 
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $pageFactory)
+        Context $context,
+        PageFactory $pageFactory)
     {
         $this->_pageFactory = $pageFactory;
         return parent::__construct($context);
