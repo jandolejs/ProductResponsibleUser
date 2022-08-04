@@ -7,7 +7,7 @@ declare(strict_types=1);
 
 namespace Aiti\ProductResponsibleUser\Model;
 
-use Aiti\ProductResponsibleUser\Api\Data\ProductResponsibleUserInterfaceFactory;
+use Aiti\ProductResponsibleUserApi\Api\Data\ProductResponsibleUserInterfaceFactory;
 use Aiti\ProductResponsibleUser\Api\Data\ProductResponsibleUserSearchResultsInterfaceFactory;
 use Aiti\ProductResponsibleUser\Model\ResourceModel\ProductResponsibleUser as ResourceProductResponsibleUser;
 use Aiti\ProductResponsibleUser\Model\ResourceModel\ProductResponsibleUser\CollectionFactory as ProductResponsibleUserCollectionFactory;
