@@ -12,19 +12,18 @@ use Magento\Framework\View\Result\PageFactory;
 class Index extends Action implements HttpGetActionInterface
 {
 
-    protected PageFactory $_pageFactory;
+    protected PageFactory $pageFactory;
 
     public function __construct(
         Context $context,
         PageFactory $pageFactory)
     {
-        $this->_pageFactory = $pageFactory;
+        $this->pageFactory = $pageFactory;
         return parent::__construct($context);
     }
 
     public function execute()
     {
-        echo "Grid here";
-        exit;
+        return $this->pageFactory->create();
     }
 }
